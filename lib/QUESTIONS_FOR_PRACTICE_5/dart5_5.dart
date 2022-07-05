@@ -14,10 +14,10 @@ class Camera{
   var _price;
 
   Camera(var _id, var _brand, var _color, var _price) {
-    this.id = _id;
-    this.brand = _brand;
-    this.color = _color;
-    this.price = _price;
+    this._id = _id;
+    this._brand = _brand;
+    this._color = _color;
+    this._price = _price;
   }
 
   void display() {
@@ -42,8 +42,8 @@ class Camera{
     _color = newValue.toLowerCase();
   }
 
-  String get price => _price;
-  set price(String value) {
+  int get price => _price;
+  set price(int value) {
     _price = value;
   }
 }
